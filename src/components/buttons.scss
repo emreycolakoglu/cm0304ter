@@ -1,0 +1,9 @@
+@import "../config/_variables";
+@import "../config/_mixins";
+
+.button {
+  &.green {
+    @include gradient($greenButtonStart, $greenButtonEnd);
+    color: $titleYellow;
+  }
+}
