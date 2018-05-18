@@ -1,0 +1,35 @@
+{
+  "name": "cm0304ter",
+  "version": "0.0.1",
+  "description": "the ter skin of championship manage 0304",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emreycolakoglu/cm0304ter.git"
+  },
+  "keywords": [
+    "championship",
+    "manager",
+    "0304",
+    "football",
+    "manager",
+    "scss",
+    "skin"
+  ],
+  "author": "Emre Colakoglu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emreycolakoglu/cm0304ter/issues"
+  },
+  "homepage": "https://github.com/emreycolakoglu/cm0304ter#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
