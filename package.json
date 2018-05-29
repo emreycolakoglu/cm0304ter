@@ -4,6 +4,7 @@
   "description": "the ter skin of championship manage 0304",
   "main": "gulpfile.js",
   "scripts": {
+    "start": "http-server ./ -p 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/emreycolakoglu/cm0304ter#readme",
   "dependencies": {
+    "http-server": "^0.11.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

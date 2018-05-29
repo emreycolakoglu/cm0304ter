@@ -18,3 +18,11 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 );
   /* IE6-9 */
 }
+@mixin buttonShadow($color1, $color2) {
+  -webkit-box-shadow: inset 0px -2px 5px 0px rgba(darken($color2, 20%), 0.25),
+    inset 0px 2px 5px 0px rgba(lighten($color1, 20%), 0.25);
+  -moz-box-shadow: inset 0px -2px 5px 0px rgba(darken($color2, 20%), 0.25),
+    inset 0px 2px 5px 0px rgba(lighten($color1, 20%), 0.25);
+  box-shadow: inset 0px -2px 5px 0px rgba(darken($color2, 20%), 0.25),
+    inset 0px 2px 5px 0px rgba(lighten($color1, 20%), 0.25);
+}

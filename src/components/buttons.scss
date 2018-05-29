@@ -2,8 +2,39 @@
 @import "../config/_mixins";
 
 .button {
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+  font-weight: 600;
+  cursor: pointer;
+
   &.green {
     @include gradient($greenButtonStart, $greenButtonEnd);
+    @include buttonShadow($greenButtonStart, $greenButtonEnd);
     color: $titleYellow;
+  }
+
+  &.red{
+    @include gradient($redButtonStart, $redButtonEnd);
+    @include buttonShadow($redButtonStart, $redButtonEnd);
+    color: #FFF;
+  }
+
+  &.blue{
+    @include gradient($blueButtonStart, $blueButtonEnd);
+    @include buttonShadow($blueButtonStart, $blueButtonEnd);
+    color: #FFF;
+  }
+
+  &.circle {
+    border-radius: 50%;
+
+    &.sm {
+      padding: 7px 0px;
+      font-size: 10px;
+      height: 14px;
+      width: 28px;
+      line-height: 14px;
+    }
   }
 }
