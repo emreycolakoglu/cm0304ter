@@ -19,10 +19,13 @@
   /* IE6-9 */
 }
 @mixin buttonShadow($color1, $color2) {
-  -webkit-box-shadow: inset 0px -2px 5px 0px rgba(darken($color2, 20%), 0.25),
-    inset 0px 2px 5px 0px rgba(lighten($color1, 20%), 0.25);
-  -moz-box-shadow: inset 0px -2px 5px 0px rgba(darken($color2, 20%), 0.25),
-    inset 0px 2px 5px 0px rgba(lighten($color1, 20%), 0.25);
-  box-shadow: inset 0px -2px 5px 0px rgba(darken($color2, 20%), 0.25),
-    inset 0px 2px 5px 0px rgba(lighten($color1, 20%), 0.25);
+  -webkit-box-shadow: inset -2px -2px 3px 0px
+      rgba(darken($color2, 20%), $darkShadowTransparency),
+    inset 2px 2px 3px 0px rgba(lighten($color1, 20%), $lightShadowTransparency);
+  -moz-box-shadow: inset -2px -2px 3px 0px
+      rgba(darken($color2, 20%), $darkShadowTransparency),
+    inset 2px 2px 3px 0px rgba(lighten($color1, 20%), $lightShadowTransparency);
+  box-shadow: inset -2px -2px 3px 0px
+      rgba(darken($color2, 20%), $darkShadowTransparency),
+    inset 2px 2px 3px 0px rgba(lighten($color1, 20%), $lightShadowTransparency);
 }

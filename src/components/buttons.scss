@@ -12,18 +12,39 @@
     @include gradient($greenButtonStart, $greenButtonEnd);
     @include buttonShadow($greenButtonStart, $greenButtonEnd);
     color: $titleYellow;
+
+    &:hover {
+      @include gradient(
+        lighten($greenButtonStart, $buttonHoverLightenRatio),
+        lighten($greenButtonEnd, $buttonHoverLightenRatio)
+      );
+    }
   }
 
-  &.red{
+  &.red {
     @include gradient($redButtonStart, $redButtonEnd);
     @include buttonShadow($redButtonStart, $redButtonEnd);
-    color: #FFF;
+    color: #fff;
+
+    &:hover {
+      @include gradient(
+        lighten($redButtonStart, $buttonHoverLightenRatio),
+        lighten($redButtonEnd, $buttonHoverLightenRatio)
+      );
+    }
   }
 
-  &.blue{
+  &.blue {
     @include gradient($blueButtonStart, $blueButtonEnd);
     @include buttonShadow($blueButtonStart, $blueButtonEnd);
-    color: #FFF;
+    color: #fff;
+
+    &:hover {
+      @include gradient(
+        lighten($blueButtonStart, $buttonHoverLightenRatio),
+        lighten($blueButtonEnd, $buttonHoverLightenRatio)
+      );
+    }
   }
 
   &.circle {
