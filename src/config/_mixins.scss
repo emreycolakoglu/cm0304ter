@@ -29,3 +29,12 @@
       rgba(darken($color2, 20%), $darkShadowTransparency),
     inset 2px 2px 3px 0px rgba(lighten($color1, 20%), $lightShadowTransparency);
 }
+
+@mixin buttonActiveShadow($color1, $color2) {
+  -webkit-box-shadow: 
+    inset 2px 2px 3px 0px rgba(darken($color1, 20%), $lightShadowTransparency);
+  -moz-box-shadow: 
+    inset 2px 2px 3px 0px rgba(darken($color1, 20%), $lightShadowTransparency);
+  box-shadow: 
+    inset 2px 2px 3px 0px rgba(darken($color1, 20%), $lightShadowTransparency);
+}

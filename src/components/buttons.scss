@@ -7,6 +7,10 @@
   user-select: none;
   font-weight: 600;
   cursor: pointer;
+  transition: box-shadow 0.10s ease;
+  border: 0;
+  font-family: inherit;
+  outline: none;
 
   &.green {
     @include gradient($greenButtonStart, $greenButtonEnd);
@@ -18,6 +22,10 @@
         lighten($greenButtonStart, $buttonHoverLightenRatio),
         lighten($greenButtonEnd, $buttonHoverLightenRatio)
       );
+    }
+
+    &:active {
+      @include buttonActiveShadow($greenButtonEnd, $greenButtonStart);
     }
   }
 
@@ -32,6 +40,10 @@
         lighten($redButtonEnd, $buttonHoverLightenRatio)
       );
     }
+
+    &:active {
+      @include buttonActiveShadow($redButtonEnd, $redButtonStart);
+    }
   }
 
   &.blue {
@@ -45,6 +57,10 @@
         lighten($blueButtonEnd, $buttonHoverLightenRatio)
       );
     }
+
+    &:active {
+      @include buttonActiveShadow($blueButtonEnd, $blueButtonStart);
+    }
   }
 
   &.circle {
@@ -53,7 +69,7 @@
     &.sm {
       padding: 7px 0px;
       font-size: 10px;
-      height: 14px;
+      height: 28px;
       width: 28px;
       line-height: 14px;
     }
