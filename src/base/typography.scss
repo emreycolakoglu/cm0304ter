@@ -1,0 +1,164 @@
+﻿@import "../config/_variables";
+@import "../config/_mixins";
+
+@font-face{
+  font-family: VagRounded;
+  src: url("../static/fonts/vagrounded-tr-bold-webfont.ttf");
+}
+
+// Headers
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  line-height: 1.428571429;
+  font-weight: 700;
+
+  &:first-child {
+      margin-top: 0;
+  }
+}
+
+
+// Paragraphs
+p {
+  margin-bottom: 10px;
+  line-height: 1.428571429;
+
+  &:last-of-type {
+      margin-bottom: 0;
+  }
+}
+
+
+
+// Links
+a {
+  color: $primaryText;
+  transition: all 0.2s ease;
+
+  &:hover {
+      color: darken($link-color, 20%);
+  }
+}
+
+
+// Lists
+ul,
+ol {
+  margin: 10px 0 0 20px;
+
+  li {
+      margin-top: 10px;
+  }
+
+  ul,
+  ol {
+      margin-top: 0;
+  }
+}
+
+ul {
+
+  li {
+      list-style: disc;
+  }
+
+  ul {
+
+      li {
+          list-style: circle;
+      }
+  }
+}
+
+ol {
+
+  li {
+      list-style: decimal;
+  }
+}
+
+
+// hr
+hr {
+  height: 1px;
+  margin: 30px 0;
+  border: none;
+  background-color: #333;
+}
+
+
+// Blockquote
+blockquote {
+  text-align: center;
+  font-style: italic;
+}
+
+
+// Tables
+table {
+  width: 100%;
+  margin: 10px 0;
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid #333;
+  text-align: left;
+}
+
+th {
+  font-weight: 700;
+}
+
+th, td {
+  padding: 15px;
+}
+
+
+// Figure
+figure {
+  margin: 10px 0;
+
+  img {
+      margin: 0;
+  }
+}
+
+figcaption {
+  margin-top: 10px;
+  color: lighten($primaryText, 10%);
+}
+
+
+// Code
+pre {
+  display: block;
+  margin: 0 0 40px 0;
+  padding: 20px;
+  background-color: lighten(#505050, 12%);
+  border: 1px solid #505050;
+  overflow: auto;
+  border-radius: 3px;
+
+  code {
+      position: static;
+      padding: 0;
+      border: none;
+      line-height: 1.5em;
+  }
+}
+
+code {
+  position: relative;
+  top: -0.2em;
+  padding: 3px;
+  font-family: Courier New, Courier, monospace;
+  font-size: 12px;
+  color: darken(#505050, 70%);
+  line-height: 1em;
+  pointer-events: none;
+  border: 1px solid #505050;
+  border-radius: 3px;
+}
+
+

@@ -1,4 +1,12 @@
+// Font Family
+$font-family: "VagRounded", "Helvetica Neue", Arial, serif;
+
+// Base Font for HTML
+$base-font-size: 16px;
+
+
 $primaryBackground: #2c436c;
+$primaryText: #FFFFFF;
 
 /* buttons */
 $greenButtonStart: #227c56;
@@ -17,3 +25,5 @@ $titleYellow: #ffff33;
 $lightShadowTransparency: 0.5;
 $darkShadowTransparency: 0.5;
 $buttonHoverLightenRatio: 2%;
+
+$link-color: $primaryText;

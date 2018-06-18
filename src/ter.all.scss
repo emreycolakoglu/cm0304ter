@@ -1,2 +1,6 @@
 @import "./config/_variables";
-@import "./components/buttons";
+@import "./base/reset";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/buttons";
+@import "./components/sidebar";

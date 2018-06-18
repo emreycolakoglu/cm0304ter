@@ -1,0 +1,13 @@
+﻿div#sidebar {
+  width: 110px;
+  height: 100%;
+  display: block;
+  background-color: #4b638b;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.03) 2px,
+      transparent 2px
+    ),
+    linear-gradient(rgba(0, 0, 0, 0.03) 2px, transparent 2px);
+  background-size: 5px 5px;
+}
